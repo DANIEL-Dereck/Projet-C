@@ -1,0 +1,61 @@
+<racine>
+  <eye>
+    <x> -300.0 </x>
+    <y> 0.0 </y>
+    <z> 100.0 </z>
+  </eye>
+  si balise item n'exite pas ou vide
+  <item>
+  </item>
+  <item>
+    <spot1>
+      <position>
+	<x> -200.0 </x>
+	<y> -500 </y>
+	<z> 100 </z>
+      </position>
+      <color>
+	<red> 255 </red>
+	<green> 255 </green>
+	<blue> 255 </blue>
+      </color>
+    </spot1>
+    si balise item na pas de debut ou de fin
+    <plan>
+      <position>
+	<x> 0.0 </x>
+	<y> 0.0 </y>
+	<z> 0.0 </z>
+      </position>
+      <rotation>
+	<x> 0.0 </x>
+	<y> 0.0 </y>
+	<z> 0.0 </z>
+      </rotation>
+      <color>
+	<red> 0 </red>
+	<green> 0 </green>
+	<blue> 100 </blue>
+      </color>
+      <brill> 0.1 </brill>
+    </plan>
+    <sphere>
+      <position>
+	<x> 150.0 </x>
+	<y> 0.0 </y>
+	<z> 0.0 </z>
+      </position>
+      <rotation>
+	<x> 90.0 </x>
+	<y> 90.0 </y>
+	<z> 90.0 </z>
+      </rotation>
+      <color>
+	<red> 150 </red>
+	<green> 36 </green>
+	<blue> 155 </blue>
+      </color>
+      <brill> 0.1 </brill>
+    </sphere>
+  </item>
+</racine>

@@ -1,0 +1,3 @@
+cat /dev/urandom | ./42sh
+!z
+cmd < file | cmd > file

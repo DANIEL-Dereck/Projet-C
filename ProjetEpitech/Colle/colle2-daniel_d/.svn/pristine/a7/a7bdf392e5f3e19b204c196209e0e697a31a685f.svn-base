@@ -1,0 +1,46 @@
+/*
+** verif.c for colle2 in /home/daniel_d/colle2-daniel_d/src
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Tue May  6 14:24:49 2014 daniel_d
+** Last update Tue May  6 14:36:44 2014 daniel_d
+*/
+
+int	verif_parenthesis(char *str)
+{
+  int	p_open;
+  int	p_close;
+  int	i;
+
+  i = 0;
+  p_open = 0;
+  p_close = 0;
+  while (str[i] != '\0')
+    {
+      if (str[i] == OPEN)
+	p_open++;
+      else if (str[i] == CLOSE)
+	p_close++;
+      i++;
+    }
+  if (p_open != p-close)
+    return (-1);
+  return (0);
+}
+
+int	verif_char(char *str)
+{
+  int	i;
+
+  i = 0;
+  while (str[i] !=  '\0')
+    {
+      if (str[i] != VALID)
+	return (-1);
+      i++;
+    }
+  return (0);
+}
+

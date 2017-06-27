@@ -1,0 +1,11 @@
+/*
+** part_three.c for text_count in /home/even_d/rendu/colle3-daniel_d/src
+**
+** Made by even_d
+** Login   <even_d@epitech.net>
+**
+** Started on  Thu May 15 20:57:28 2014 even_d
+** Last update Thu May 15 20:57:49 2014 even_d
+*/
+
+#include "text.h"

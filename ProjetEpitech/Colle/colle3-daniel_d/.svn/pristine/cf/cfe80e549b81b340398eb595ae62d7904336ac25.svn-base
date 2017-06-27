@@ -1,0 +1,24 @@
+/*
+** parc.c for parc in /home/daniel_d/colle3-daniel_d/test
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Thu May 15 20:04:52 2014 daniel_d
+** Last update Thu May 15 20:08:35 2014 daniel_d
+*/
+
+/*
+** -t = 1
+** -r = 2
+** -reverse = 5
+** -fullstat = 9
+** -on_th_fly = 18
+** si =on : value
+** si =off : -value
+*/
+
+int	count_value(int result, int add)
+{
+  if (add = 1 && ()
+}

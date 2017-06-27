@@ -1,0 +1,7 @@
+je te donne l'ensemble des fonctions qui ont été codé. je te demande de rassembler le plus possible. 
+
+git add *
+git commit -am "Dede"
+git pull
+(tu refais un git commit -am "Dede")
+git push

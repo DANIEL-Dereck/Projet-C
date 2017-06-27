@@ -1,0 +1,38 @@
+/*
+** colle2.c for colle in /home/gautie_a/rendu/colle2-daniel_d
+** 
+** Made by gautie_a
+** Login   <gautie_a@epitech.net>
+** 
+** Started on  Tue May  6 14:13:07 2014 gautie_a
+** Last update Tue May  6 15:11:05 2014 daniel_d
+*/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include "calculator.h"
+
+t_nb	*parse_expr(char *expr)
+{
+  t_nb	*nb;
+
+  if (!(nb = malloc(sizeof(*nb))))
+    return (0);
+  return (nb);
+}
+
+int		colle2(char *expr)
+{
+  t_core	*core;
+
+  if (!verif_expr(expr))
+    {
+      my_putstr("Syntax error\n");
+      return (0);
+    }
+  if (!(core = malloc(sizeof(*core))))
+    return (0);
+  if (!(core->nb = parse_expr(expr)))
+    return (0);
+  return (1);
+}

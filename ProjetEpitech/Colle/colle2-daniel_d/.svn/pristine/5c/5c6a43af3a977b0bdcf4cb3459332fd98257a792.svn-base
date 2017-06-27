@@ -1,0 +1,20 @@
+/*
+** funk.c for colle2 in /home/daniel_d/colle2-daniel_d/src
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Tue May  6 16:58:52 2014 daniel_d
+** Last update Tue May  6 17:00:56 2014 daniel_d
+*/
+
+char	*func(char *str)
+{
+  int	i;
+
+  i = 0;
+  while (str[i] != ')')
+    {
+
+      }
+}

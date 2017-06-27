@@ -1,0 +1,22 @@
+<rss version="2.0">
+  <channel>
+    <item>
+      <numero>1</numero>
+      <title>TITRE 1</title>
+      <link>URL 1</link>
+      <description>DESCRIPTION</description>
+    </item>
+    <item>
+      <numero>2</numero>
+      <title>TITRE 2</title>
+      <link>URL 2</link>
+      <description>DESCRIPTION</description>
+    </item>
+    <item>
+      <numero>3</numero>
+      <title>TITRE 3</title>
+      <link>URL 3</link>
+      <description>DESCRIPTION</description>
+    </item>
+  </channel>
+</rss>

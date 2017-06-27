@@ -1,0 +1,34 @@
+##
+## Makefile for colle2 in /home/daniel_d/colle2-daniel_d
+## 
+## Made by daniel_d
+## Login   <daniel_d@epitech.net>
+## 
+## Started on  Tue May  6 14:02:58 2014 daniel_d
+## Last update Tue May  6 14:05:31 2014 daniel_d
+##
+
+CC	= gcc
+
+RM	= rm -f
+
+NAME	= calculator
+
+CFLAGS	+= -Wall -Wextra
+
+SRC	= src/main.c\
+
+OBJ	= $(SRC:.c=.o)
+
+all	: $(NAME)
+
+$(NAME)	: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean	:
+	$(RM) $(OBJ)
+
+fclean	: clean
+	$(RM) $(NAME)
+
+re	: fclean all

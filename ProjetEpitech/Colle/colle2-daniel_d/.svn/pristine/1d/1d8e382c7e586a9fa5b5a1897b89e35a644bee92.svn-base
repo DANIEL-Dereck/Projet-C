@@ -1,0 +1,32 @@
+/*
+** my_func.c for colle 2 in /home/daniel_d/colle2-daniel_d/src
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Tue May  6 14:14:00 2014 daniel_d
+** Last update Tue May  6 14:21:57 2014 daniel_d
+*/
+
+void	my_putchar(char c)
+{
+  write(1, &c, 1);
+}
+
+void	my_putstr(char *str)
+{
+  int	i;
+
+  i = 0;
+  while (str[i] != '\0')
+    my_putchar(str[i++]);
+}
+
+int	my_strlen(char *str)
+{
+  int	i;
+
+  i = 0;
+  while (!str[i++]);
+  return (--i);
+}

@@ -1,0 +1,43 @@
+/*
+** calculator.h for calculator in /home/daniel_d/colle2-daniel_d/include
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Tue May  6 14:09:42 2014 daniel_d
+** Last update Tue May  6 14:31:40 2014 gautie_a
+*/
+
+#ifndef CALCULATOR_H_
+# define CALCULATOR_H_
+
+# define OPEN	'('
+# define CLOSE	')'
+# define OPS	"+-*/%"
+# define VALID	"()+-*/%0123456789"
+
+typedef struct s_nb
+{
+  char	*content;
+  int	total;
+} t_nb;
+
+typedef struct s_op
+{
+  char	op;
+  int	(*func)(int, int);
+} t_op;
+
+int	colle2(char *);
+
+//OPERATIONS
+int	colle_add(int, int);
+int	colle_sub(int, int);
+int	colle_mul(int, int);
+int	colle_div(int, int);
+int	colle_mod(int, int);
+
+//LIB
+int	my_str_contains(char *, char);
+
+#endif

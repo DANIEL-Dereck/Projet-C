@@ -1,0 +1,29 @@
+my_getnbr_base : overflow 100000000000000000000000000000000000000000
+->my_pow : (name) overflow
+opti getnextline : memory leak when read ret val < 1
+     		 check strcat and strdup returns
+
+leak strdup ?
+
+HEAP SUMMARY:
+==26810==     in use at exit: 258 bytes in 2 blocks
+==26810==   total heap usage: 4 allocs, 2 frees, 524 bytes allocated
+==26810== 
+==26810== 1 bytes in 1 blocks are still reachable in loss record 1 of 2
+==26810==    at 0x4C2C27B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26810==    by 0x4006FF: my_strdup (get_next_line.c:49)
+==26810==    by 0x4008D3: get_next_line (get_next_line.c:102)
+==26810==    by 0x400989: get_next_line (get_next_line.c:115)
+==26810==    by 0x4009BE: main (get_next_line.c:122)
+==26810== 
+==26810== 257 bytes in 1 blocks are definitely lost in loss record 2 of 2
+==26810==    at 0x4C2C27B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==26810==    by 0x4008ED: get_next_line (get_next_line.c:105)
+==26810==    by 0x4009BE: main (get_next_line.c:122)
+==26810== 
+==26810== LEAK SUMMARY:
+==26810==    definitely lost: 257 bytes in 1 blocks
+==26810==    indirectly lost: 0 bytes in 0 blocks
+==26810==      possibly lost: 0 bytes in 0 blocks
+==26810==    still reachable: 1 bytes in 1 blocks
+==26810==         suppressed: 0 bytes in 0 blocks

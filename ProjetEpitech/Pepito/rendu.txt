@@ -1,0 +1,15 @@
+nom : serveur
+type : Segmentation fault
+impact : p1ant3 l3 s3rv3ur
+solution : no ID
+
+
+
+-nom
+-type
+-impact + description
+-solution / patch
+
+127.0.0.1 31337
+
+6a247648

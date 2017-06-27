@@ -1,0 +1,15 @@
+/*
+** colle2.c for colle in /home/gautie_a/rendu/colle2-daniel_d
+** 
+** Made by gautie_a
+** Login   <gautie_a@epitech.net>
+** 
+** Started on  Tue May  6 14:13:07 2014 gautie_a
+** Last update Tue May  6 14:21:02 2014 gautie_a
+*/
+
+int	colle2(char *expr)
+{
+  
+  return (1);
+}

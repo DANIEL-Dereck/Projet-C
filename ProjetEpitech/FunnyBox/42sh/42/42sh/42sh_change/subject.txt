@@ -1,0 +1,6 @@
+fichier temporaire ou tout le monde peut modifier pour que sa fonctionne merci de ne pas faire de connerie dessu .
+git add *
+git commit -am "Dede"
+git pull
+(tu refais un git commit -am "Dede")
+git push

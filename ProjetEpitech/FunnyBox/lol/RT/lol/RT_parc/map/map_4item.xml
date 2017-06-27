@@ -1,0 +1,93 @@
+<racine>
+  <eye>
+    <x> -200.0 </x>
+    <y> -100 </y>
+    <z> 100 </z>
+  </eye>
+  <item>
+    <spot1>
+      <position>
+	<x> -200.0 </x>
+	<y> -500 </y>
+	<z> 100 </z>
+      </position>
+      <color>
+	<red> 255 </red>
+	<green> 255 </green>
+	<blue> 255 </blue>
+      </color>
+    </spot1>
+    <plan>
+      <position>
+	<x> 111.0 </x>
+	<y> 222.0 </y>
+	<z> 333.0 </z>
+      </position>
+      <rotation>
+	<x> 111.0 </x>
+	<y> 222.0 </y>
+	<z> 333.0 </z>
+      </rotation>
+      <color>
+	<red> 52 </red>
+	<green> 45 </green>
+	<blue> 100 </blue>
+      </color>
+      <brill> 546.1 </brill>
+    </plan>
+    <sphere>
+      <position>
+	<x> 150.0 </x>
+	<y> 0.0 </y>
+	<z> 0.0 </z>
+      </position>
+      <rotation>
+	<x> 90.0 </x>
+	<y> 90.0 </y>
+	<z> 90.0 </z>
+      </rotation>
+      <color>
+	<red> 150 </red>
+	<green> 36 </green>
+	<blue> 155 </blue>
+      </color>
+      <brill> 0.1 </brill>
+    </sphere>
+    <cylindre>
+      <position>
+	<x> 150.0 </x>
+	<y> 0.0 </y>
+	<z> 0.0 </z>
+      </position>
+      <rotation>
+	<x> 90.0 </x>
+	<y> 90.0 </y>
+	<z> 90.0 </z>
+      </rotation>
+      <color>
+	<red> 150 </red>
+	<green> 36 </green>
+	<blue> 155 </blue>
+      </color>
+      <brill> 0.1 </brill>
+    </cylindre>
+    <cone>
+      <position>
+	<x> 150.0 </x>
+	<y> 0.0 </y>
+	<z> 0.0 </z>
+      </position>
+      <rotation>
+	<x> 90.0 </x>
+	<y> 90.0 </y>
+	<z> 90.0 </z>
+      </rotation>
+      <color>
+	<red> 150 </red>
+	<green> 36 </green>
+	<blue> 155 </blue>
+      </color>
+      <brill> 0.1 </brill>
+    </cone>
+  </item>
+</racine>

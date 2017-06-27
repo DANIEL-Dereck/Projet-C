@@ -1,0 +1,46 @@
+/*
+** verif.c for colle2 in /home/daniel_d/colle2-daniel_d/src
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Tue May  6 14:24:49 2014 daniel_d
+** Last update Tue May  6 16:04:46 2014 daniel_d
+*/
+
+#include "calculator.h"
+
+int	verif_parenthesis(char *str)
+{
+  int	count;
+  int	i;
+
+  i = -1;
+  count = 0;
+  while (str && str[++i])
+    {
+      if (str[i] == OPEN)
+	++count;
+      else if (str[i] == CLOSE)
+	--count;
+      if (count < 0)
+	return (0);
+    }
+  if (count != 0)
+    return (0);
+  return (1);
+}
+
+int	verif_expr(char *str)
+{
+  int	i;
+
+  if (!verif_parenthesis(str))
+    return (0);
+  i = -1;
+  while (str && str[++i])
+    if (!my_str_contains(VALID, str[i]))
+      return (0);
+  return (1);
+}
+

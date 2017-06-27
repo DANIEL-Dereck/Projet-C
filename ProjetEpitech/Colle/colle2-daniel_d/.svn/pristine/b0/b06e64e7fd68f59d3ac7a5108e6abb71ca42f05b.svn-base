@@ -1,0 +1,14 @@
+/*
+** main.c for  in /home/daniel_d/colle2-daniel_d/src
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Tue May  6 14:05:39 2014 daniel_d
+** Last update Tue May  6 14:06:03 2014 daniel_d
+*/
+
+int	main(int ac, char **av)
+{
+  
+}

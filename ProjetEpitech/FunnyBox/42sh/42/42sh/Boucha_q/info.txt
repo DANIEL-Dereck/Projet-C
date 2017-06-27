@@ -1,0 +1,19 @@
+Alors, je te laisse tcheck les alias pour voir si tout fonctionne, je
+te donne un premier fichier ou il y a les include les src makefile, a
+partir de demain soir ce premier fichier sera opérationelle je te
+demande donc de bosser sur les alias sans toucher a ce fichier, des
+que tu as toucher ou fais une fonction, tu fais :
+-un git *add
+-git commit -am "NOM"
+-git pull
+-git push
+
+pour recuperer les info des autres tu fais un git pull
+
+moi et dede on va faire tout pour que sa compile et que sa marche pour
+demain soir. Greg et Luc on va bosser demain aprem sur le lexerparser,
+aujourd'hui je refais tout les include tranquillement je te
+demanderais de mettre a chaque fois dans tes fichier .c 
+un include qui sera de ce type : #include "mysh.h". et de faire
+souvent des git commit et des git push pour que je puisse implementer
+le tout . merci 

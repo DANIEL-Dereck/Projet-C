@@ -1,0 +1,36 @@
+/*
+** text.h for test_count in /home/even_d/rendu/colle3-daniel_d/include
+**
+** Made by even_d
+** Login   <even_d@epitech.net>
+**
+** Started on  Thu May 15 19:11:07 2014 even_d
+** Last update Thu May 15 20:58:00 2014 even_d
+*/
+
+#ifndef TEXT_H_
+# define TEXT_H_
+
+typedef struct s_core
+{
+  char	*av1;
+  char	*av2;
+  int	**flags;
+  char	*str;
+  char	*test;
+  int	*count;
+}t_core;
+
+void	my_putstr(char *);
+void	my_putchar(char);
+void	my_put_nbr(int);
+int	my_strlen(char *);
+char	*my_strcat(char *, char);
+int	my_strcmp(char *, char *);
+int	*my_strcatint(int *tab, int nb);
+int	my_count_letter(char c, t_core *core);
+int	my_check_letter(char c, char *str);
+void	aff_result(char *str, int *count);
+void	part_one(char *str);
+void	part_two(char *str, char *test);
+#endif /* !TEXT_H__ */

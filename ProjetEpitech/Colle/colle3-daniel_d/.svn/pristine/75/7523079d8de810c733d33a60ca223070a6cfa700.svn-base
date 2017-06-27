@@ -1,0 +1,111 @@
+/*
+** part_three.c for text_count in /home/even_d/rendu/colle3-daniel_d/src
+**
+** Made by even_d
+** Login   <even_d@epitech.net>
+**
+** Started on  Thu May 15 20:57:28 2014 even_d
+** Last update Thu May 15 21:32:40 2014 even_d
+*/
+
+#include <stdlib.h>
+
+#include "text.h"
+
+void	aff_element(char c, int i)
+{
+  my_putchar(c);
+  my_putchar(':');
+  my_put_nbr(i);
+}
+
+void	aff_result_t(char *str, int *count)
+{
+  int	i;
+  int	max;
+
+  i = 0;
+  max = 0;
+  while (count[i] != -1)
+    {
+      if (count[i] > max)
+	max = count[i];
+      i += 1;
+    }
+  while (max > 0)
+    {
+      i = 0;
+      while (count[i] != -1)
+	{
+	  if (count[i] == max)
+	    {
+	      aff_element(str[i], count[i]);
+	      my_putchar('\n');
+	    }
+	  i += 1;
+	}
+      max -= 1;
+    }
+}
+
+void	aff_result_r(char *str, int *count)
+{
+  int	max;
+  int	i;
+  int	boo;
+
+  i = 0;
+  max = 0;
+  while (count[i] != -1)
+    {
+      if (count[i] > max)
+	max = count[i];
+      i += 1;
+    }
+  while (max > 0)
+    {
+      i = 0;
+      while (count[i] != -1)
+	{
+	  boo = 0;
+	  if (count[i] == max && boo == 0)
+	    {
+	      aff_element(str[i], count[i]);
+	      boo = 1;
+	    }
+	  else
+	    {
+	      my_putchar(',');
+	      my_putchar(str[i]);
+	    }
+	  if (boo == 1)
+	    my_putchar('\n');
+	  i += 1;
+	}
+      max -= 1;
+    }
+}
+
+void    part_three(t_core *core)
+{
+  int   i;
+  int   ret;
+
+  i = 0;
+  core->test = NULL;
+  core->count = NULL;
+  while (core->av2[i] != '\0')
+    {
+      if ((my_check_letter(core->av2[i], core->test)) != EXIT_FAILURE)
+        {
+          ret = my_count_letter(core->av2[i], core);
+          if (ret != 0)
+            core->count = my_strcatint(core->count, ret);
+          core->test = my_strcat(core->test, core->av2[i]);
+          i += 1;
+        }
+      else
+        i += 1;
+    }
+  aff_result_option(core->test, core->count);
+}

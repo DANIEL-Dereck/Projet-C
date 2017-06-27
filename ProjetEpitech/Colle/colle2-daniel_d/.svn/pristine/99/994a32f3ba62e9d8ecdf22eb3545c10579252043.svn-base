@@ -1,0 +1,14 @@
+/*
+** calculator.h for calculator in /home/daniel_d/colle2-daniel_d/include
+** 
+** Made by daniel_d
+** Login   <daniel_d@epitech.net>
+** 
+** Started on  Tue May  6 14:09:42 2014 daniel_d
+** Last update Tue May  6 14:11:04 2014 daniel_d
+*/
+
+#ifndef CALCULATOR_H_
+# define CALCULATOR_H_
+
+#endif
